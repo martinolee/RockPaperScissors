@@ -13,6 +13,10 @@
 		9447752C24EC15A400878062 /* RockPaperScissorsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9447750224EC15A300878062 /* RockPaperScissorsApp.swift */; };
 		9447752F24EC15A400878062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9447750424EC15A400878062 /* Assets.xcassets */; };
 		9447753024EC15A400878062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9447750424EC15A400878062 /* Assets.xcassets */; };
+		947CEF5524EFF96400124011 /* HandSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947CEF5424EFF96400124011 /* HandSign.swift */; };
+		947CEF5624EFF96400124011 /* HandSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947CEF5424EFF96400124011 /* HandSign.swift */; };
+		947CEF5924EFF97200124011 /* Imageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947CEF5824EFF97200124011 /* Imageable.swift */; };
+		947CEF5A24EFF97200124011 /* Imageable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947CEF5824EFF97200124011 /* Imageable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +50,8 @@
 		9447752424EC15A400878062 /* Tests macOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tests macOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9447752824EC15A400878062 /* Tests_macOS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests_macOS.swift; sourceTree = "<group>"; };
 		9447752A24EC15A400878062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		947CEF5424EFF96400124011 /* HandSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HandSign.swift; path = Shared/HandSign.swift; sourceTree = SOURCE_ROOT; };
+		947CEF5824EFF97200124011 /* Imageable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Imageable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +101,8 @@
 		9447750124EC15A200878062 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				9447750224EC15A300878062 /* RockPaperScissorsApp.swift */,
-				9447750424EC15A400878062 /* Assets.xcassets */,
+				947CEF5B24EFF9E100124011 /* Sources */,
+				947CEF5C24EFF9E500124011 /* Resources */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -145,6 +151,48 @@
 				9447752A24EC15A400878062 /* Info.plist */,
 			);
 			path = "Tests macOS";
+			sourceTree = "<group>";
+		};
+		947CEF5324EFF95400124011 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				947CEF5424EFF96400124011 /* HandSign.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		947CEF5724EFF96700124011 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				947CEF5824EFF97200124011 /* Imageable.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		947CEF5B24EFF9E100124011 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				947CEF5D24EFF9F100124011 /* Startup */,
+				947CEF5724EFF96700124011 /* Protocols */,
+				947CEF5324EFF95400124011 /* Models */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		947CEF5C24EFF9E500124011 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9447750424EC15A400878062 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		947CEF5D24EFF9F100124011 /* Startup */ = {
+			isa = PBXGroup;
+			children = (
+				9447750224EC15A300878062 /* RockPaperScissorsApp.swift */,
+			);
+			path = Startup;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -305,6 +353,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9447752B24EC15A400878062 /* RockPaperScissorsApp.swift in Sources */,
+				947CEF5924EFF97200124011 /* Imageable.swift in Sources */,
+				947CEF5524EFF96400124011 /* HandSign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -313,6 +363,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9447752C24EC15A400878062 /* RockPaperScissorsApp.swift in Sources */,
+				947CEF5A24EFF97200124011 /* Imageable.swift in Sources */,
+				947CEF5624EFF96400124011 /* HandSign.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

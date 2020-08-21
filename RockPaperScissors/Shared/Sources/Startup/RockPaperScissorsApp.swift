@@ -11,7 +11,6 @@ import SwiftUI
 struct RockPaperScissorsApp: App {
   var body: some Scene {
     WindowGroup {
-      ContentView()
     }
   }
 }
