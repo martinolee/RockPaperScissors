@@ -8,5 +8,5 @@
 import SwiftUI
 
 protocol Imageable {
-  var image: Image { get }
+  var imageName: String { get }
 }

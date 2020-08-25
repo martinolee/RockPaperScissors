@@ -15,16 +15,16 @@ enum HandSign {
 
 
 extension HandSign: Imageable {
-  var image: Image {
+  var imageName: String {
     switch self {
     case .rock:
-      return Image("hand.sign.rock")
+      return "hand.sign.rock"
       
     case .paper:
-      return Image("hand.sign.paper")
+      return "hand.sign.paper"
       
     case .scissors:
-      return Image("hand.sign.scissors")
+      return "hand.sign.scissors"
     }
   }
 }
